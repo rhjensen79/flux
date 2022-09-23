@@ -1,0 +1,3 @@
+export KUBECONFIG=""
+export GITHUB_TOKEN=""
+export GITHUB_USER=""
