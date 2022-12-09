@@ -1,0 +1,5 @@
+resources:
+  - webapp-ns.yaml
+  - webapp.yaml
+  - webapp-service.yaml
+  - webapp-ingress.yaml
