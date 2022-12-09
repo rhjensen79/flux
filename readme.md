@@ -17,6 +17,6 @@ flux bootstrap github \
   --owner=$GITHUB_USER \
   --repository=flux \
   --branch=master \
-  --path=./clusters/my-cluster2 \
+  --path=./clusters/kind \
   --personal
 ```
