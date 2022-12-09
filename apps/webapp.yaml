@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  namespace: mywebapp
+  labels:
+    name: web
+    app: mywebapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: web
+  template:
+    metadata:
+      labels:
+        name: web
+    spec:
+      containers:
+        - name: web
+          image: janakiramm/mywebapp:v1
+          ports:
+            - containerPort: 80
