@@ -2,13 +2,7 @@ setup:
 	direnv allow .
 
 create: setup
-	tanzu uc create flux
-
-stop:
-	tanzu uc stop flux
-
-start: setup
-	tanzu uc start flux
+	kind create cluster --name flux 
 
 delete: 
-	tanzu uc delete flux
+	kind delete cluster --name flux
